@@ -3,14 +3,13 @@ let userNum = prompt("Please type in a number for the song");
 let regex = /^[0-9]+$/
 
 
-while (isNaN(userNum) || userNum == "" || regex.test(userNum) == false) {
+while (isNaN(userNum) || userNum == "" || regex.test(userNum) == false || userNum <= 0) {
     userNum = prompt("Please type in a valid number for the song");
 }
 
 let bottles = userNum;
 let down = 1;
 
-    debugger;
 
     while(bottles - down > 0) {
 
